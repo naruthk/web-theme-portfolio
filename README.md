@@ -4,7 +4,7 @@ The ultimate one-page portfolio template featuring an attractive portfolio layou
 
 ## Download
 
-To download the distributed version (just the HTML, CSS, and Javascript files to get everything up and running right away), click on this link: [https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip](theme.zip)
+To download the distributed version (just the HTML, CSS, and Javascript files to get everything up and running right away), click on this link: [https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip](https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip)
 
 ## Demo
 
