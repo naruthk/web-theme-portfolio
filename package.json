@@ -1,0 +1,23 @@
+{
+  "name": "web2017",
+  "version": "1.0.0",
+  "description": "Personal website of Naruth Kongurai",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naruth Kongurai",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-beautify": "0.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "jquery": "^3.2.1",
+    "pug": "^2.0.0-rc.2"
+  }
+}

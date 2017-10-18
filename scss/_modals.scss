@@ -1,0 +1,29 @@
+/*
+------
+------
+
+MODALS 
+
+------
+------
+*/
+
+.modal-content-wrapper {
+    background-color: white;
+    padding: 30px;
+    .exit-btn {
+        float: right;
+    }
+    img {
+        margin-bottom: 30px;
+    }
+    font-size: 14pt;
+    font-weight: 300;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    border-radius: 10px;
+
+}

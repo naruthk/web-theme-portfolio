@@ -1,0 +1,106 @@
+/* Generics */
+
+// Links
+a {
+    &:visited {
+        color: $color-main-typography;
+    }
+    &:hover {
+        color: $link-color;
+        text-decoration: none !important;
+    }
+    color: $color-main-typography;
+    text-decoration: none;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    -ms-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+%link-white {
+    color: white !important;
+    &:hover {
+        color: white !important;
+    }
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+h3 { font-weight: 600; }
+p { font-weight: 300; color: #5c5c5c}
+
+// General
+body {
+    background-color: $page-background-color;
+    font-family: $font-family;
+    font-size: $font-size !important;
+    font-weight: 400;
+    color: $font-color;
+}
+
+// Customizations - Colors, Backgrounds, Visiblity
+.background-white {
+    background-color: #fff;
+}
+.background-dark {
+    background-color: #282828;
+}
+.background-orange {
+    background-color: $color-main-typography;
+}
+header, footer {
+    color: white;
+}
+.hidden {
+    display: none;
+}
+
+// Buttons
+.btn-bold {
+    margin: auto;
+    border-radius: 32px;
+    background-color: #26484c;
+    width: 300px;
+    height: 100px;
+    padding: 18px 0 14px;
+    text-align: center;
+    &:hover {
+        background-color: #000;
+        #arrow {
+            font-size: 20pt;
+        }
+    }
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    -ms-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    #arrow {
+        font-size: inherit;
+    }
+    a, a:hover {
+        @extend %link-white;
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border-bottom: 1px solid $color-main-typography;
+    hr.light {
+        border-bottom: 1px solid #282828;
+    }
+}
+
+.margin-t-20 { height: 20px; }
+.margin-t-60 { height: 60px; }
+
+.width-50 { width: 80%; margin: auto;}
+
+.div-line-divider {
+    padding-right: 20px; 
+    border-right: 1px solid #ccc;
+}

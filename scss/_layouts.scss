@@ -1,0 +1,15 @@
+/* Layouts */
+
+%padding {
+    padding: $general-padding-size;
+}
+
+// Layout Sections
+.large-wrapper {
+    margin: 0 40px 0 40px;
+    @extend %padding;
+}
+.small-wrapper {
+    @extend %padding;
+}
+

@@ -1,0 +1,325 @@
+/**
+
+    Official theme for the Portfolio Theme webpage created by Naruth Kongurai
+    
+    Theme: Portfolio
+    Creator: Naruth Kongurai
+    Development: HTML, CSS, Javascript
+
+    Link: https://github.com/naruthk/web-theme-portfolio
+    Creator's website: http://www.naruthk.com
+    
+    For any inquiry regarding this theme, please send an email to "contact@naruthk.com"
+    
+    Enjoy!
+
+**/
+/* Generics */
+a {
+  color: #e87722;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; }
+  a:visited {
+    color: #e87722; }
+  a:hover {
+    color: #479dff;
+    text-decoration: none !important; }
+
+.btn-bold a, .btn-bold a:hover, header .header-logo a, header .header-logo a:visited, .scroll-to-top a {
+  color: white !important; }
+  .btn-bold a:hover, header .header-logo a:hover, .scroll-to-top a:hover {
+    color: white !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-weight: 600; }
+
+p {
+  font-weight: 300;
+  color: #5c5c5c; }
+
+body {
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt !important;
+  font-weight: 400;
+  color: #000; }
+
+.background-white {
+  background-color: #fff; }
+
+.background-dark, header, footer, #skills, .feature-banner {
+  background-color: #282828; }
+
+.background-orange {
+  background-color: #e87722; }
+
+header, footer {
+  color: white; }
+
+.hidden {
+  display: none; }
+
+.btn-bold {
+  margin: auto;
+  border-radius: 32px;
+  background-color: #26484c;
+  width: 300px;
+  height: 100px;
+  padding: 18px 0 14px;
+  text-align: center;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  -ms-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out; }
+  .btn-bold:hover {
+    background-color: #000; }
+    .btn-bold:hover #arrow {
+      font-size: 20pt; }
+  .btn-bold #arrow {
+    font-size: inherit; }
+
+hr {
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid #e87722; }
+  hr hr.light {
+    border-bottom: 1px solid #282828; }
+
+.margin-t-20 {
+  height: 20px; }
+
+.margin-t-60 {
+  height: 60px; }
+
+.width-50 {
+  width: 80%;
+  margin: auto; }
+
+.div-line-divider {
+  padding-right: 20px;
+  border-right: 1px solid #ccc; }
+
+/* Layouts */
+.large-wrapper, .small-wrapper {
+  padding: 30px; }
+
+.large-wrapper {
+  margin: 0 40px 0 40px; }
+
+/* Theme */
+header {
+  padding: 50px 0 20px 0; }
+  header .header-logo {
+    font-size: 36pt;
+    line-height: 46pt; }
+  header .header-logo-slogan {
+    font-size: 21pt;
+    line-height: 21pt;
+    margin-top: 10px; }
+    header .header-logo-slogan span {
+      font-weight: bold; }
+  @media screen and (max-width: 720px) {
+    header {
+      text-align: center; }
+      header .logo-slogan {
+        text-align: center; }
+      header span {
+        font-weight: bold; } }
+
+footer {
+  padding-bottom: 80px; }
+  footer p {
+    color: #969696;
+    line-height: 20px; }
+  footer span {
+    font-size: 10pt; }
+
+#about, #companies, #projects {
+  padding: 0 0 60px 0; }
+
+#about {
+  margin-top: 30px;
+  text-align: left; }
+  #about h2 {
+    margin-bottom: 30px; }
+  #about p {
+    margin-bottom: 20px; }
+  #about span {
+    margin: 30px 20px 0 0; }
+    #about span i {
+      margin-right: 10px; }
+  #about .mega-about {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0 10px 0; }
+
+#projects i {
+  margin-left: 10px;
+  font-size: 20pt; }
+
+#projects .toolbar.mb2.mt2 button {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  padding: .5rem 1rem;
+  margin: 0 5px 0 0;
+  height: auto;
+  border: 1px solid #d3d3d3;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: #555;
+  background-color: white;
+  margin-bottom: 7px !important;
+  -webkit-transition: background-color 0.8s ease-out;
+  -moz-transition: background-color 0.8s ease-out;
+  -o-transition: background-color 0.8s ease-out;
+  -ms-transition: background-color 0.8s ease-out;
+  transition: background-color 0.8s ease-out; }
+  #projects .toolbar.mb2.mt2 button:hover {
+    text-decoration: none;
+    background-color: #3a3a3a;
+    color: white;
+    border: 1px solid #d3d3d3; }
+  #projects .toolbar.mb2.mt2 button:focus {
+    outline: none;
+    border-color: var(--darken-2);
+    box-shadow: 0 0 0 3px var(--darken-3); }
+  #projects .toolbar.mb2.mt2 button ::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+#projects #portfolio {
+  margin: 3rem 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 3rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%; }
+  @media screen and (max-width: 700px) {
+    #projects #portfolio {
+      column-count: 2 !important;
+      -webkit-column-count: 2 !important;
+      -moz-column-count: 2 !important; } }
+  @media screen and (max-width: 500px) {
+    #projects #portfolio {
+      column-count: 1 !important;
+      -webkit-column-count: 1 !important;
+      -moz-column-count: 1 !important; } }
+  #projects #portfolio .tile {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    margin-bottom: 20px; }
+  #projects #portfolio .scale-anm {
+    transform: scale(1); }
+  #projects #portfolio .tile img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: grayscale(0%);
+    vertical-align: middle;
+    -webkit-transition: filter 0.5s ease-out;
+    -moz-transition: filter 0.5s ease-out;
+    -o-transition: filter 0.5s ease-out;
+    -ms-transition: filter 0.5s ease-out;
+    transition: filter 0.5s ease-out;
+    border: 1px solid #d3d3d3; }
+    #projects #portfolio .tile img:hover {
+      filter: grayscale(100%); }
+
+#skills {
+  padding-top: 30px;
+  color: white; }
+  #skills .dev-tech-box span {
+    font-size: smaller;
+    font-weight: 300;
+    color: #7e7e7e; }
+  #skills .dev-tech-box p {
+    color: #ffffff; }
+
+.feature-banner {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0 10px 0; }
+  .feature-banner i {
+    font-size: 30pt;
+    margin: 30px 30px 30px 0; }
+  .feature-banner a {
+    color: white;
+    margin: 30px;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    -ms-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out; }
+    .feature-banner a:hover {
+      color: #e87722 !important; }
+  @media screen and (max-width: 720px) {
+    .feature-banner i {
+      font-size: 25pt;
+      margin: 10px; }
+    .feature-banner a {
+      margin: 10px; } }
+
+.scroll-to-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  background-color: rgba(105, 105, 105, 0.267);
+  border-bottom: 5px solid #f7f7f7;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14pt;
+  -webkit-transition: font-size 0.5s ease-out;
+  -moz-transition: font-size  0.5s ease-out;
+  -o-transition: font-size  0.5s ease-out;
+  -ms-transition: font-size  0.5s ease-out;
+  transition: font-size  0.5s ease-out; }
+  .scroll-to-top:hover {
+    font-size: 16pt; }
+
+.mini-social-bar i {
+  margin-right: 30px; }
+
+/*
+------
+------
+
+MODALS 
+
+------
+------
+*/
+.modal-content-wrapper {
+  background-color: white;
+  padding: 30px;
+  font-size: 14pt;
+  font-weight: 300;
+  border-radius: 10px; }
+  .modal-content-wrapper .exit-btn {
+    float: right; }
+  .modal-content-wrapper img {
+    margin-bottom: 30px; }
+  .modal-content-wrapper h2 {
+    margin-bottom: 30px; }
