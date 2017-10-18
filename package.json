@@ -1,7 +1,7 @@
 {
-  "name": "web2017",
+  "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "Personal website of Naruth Kongurai",
+  "description": "Website created by Naruth Kongurai",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
