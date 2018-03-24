@@ -2,13 +2,11 @@
 
 var gulp = require('gulp');
 var pkg = require('./package.json');
-
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var browserSync = require('browser-sync').create();
 var gulpPugBeautify = require('gulp-pug-beautify');
 var cleanCSS = require('gulp-clean-css');
- 
 
 // Copy required files to their distributions folder
 gulp.task('copy', function() {
@@ -24,8 +22,6 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('dist'));
 });
 
-var pugFiles = ['modules/**/*.pug', '*.pug']
-
 // Minified CSS
 gulp.task('minify-css', () => {
   return gulp.src('./dist/*.css')
@@ -35,7 +31,7 @@ gulp.task('minify-css', () => {
 
 // // Build HTML using PUG template, then Prettify it
 gulp.task('pug', function () {
-  return gulp.src(pugFiles)
+  return gulp.src(['modules/**/*.pug', '*.pug'])
     .pipe(gulpPugBeautify({ omit_empty_lines: true }))
     .pipe(pug({ pretty: true }))
     .pipe(gulp.dest('dist'))
