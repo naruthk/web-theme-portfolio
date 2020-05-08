@@ -1,38 +1,33 @@
-# Simple Modern One-Page Portfolio HTML Theme
+# One-Page Portfolio HTML Website
 
-The ultimate one-page portfolio template featuring an attractive portfolio layout and skills section created by [Naruth Kongurai](https://github.com/naruthk). 
+This is a beautiful, yet modern single-page portfolio. The white-against-black monotone allows your content to shine through easily. 
 
-## Download
+## Getting Started
 
-To download the distributed version (just the HTML, CSS, and Javascript files to get everything up and running right away), click on this link: [https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip](https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip)
+Getting started right away is super easy. You can download the actual assets (HTML, CSS, and JavaScript files) by acccessing this link: [https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip](https://github.com/naruthk/web-theme-portfolio/raw/master/theme.zip).
 
 ## Demo
-
-- [http://www.naruthk.com](http://www.naruthk.com) - I created this theme for the purpose of using it as the design for my own website. I decided to share it everyone else.
-- [https://codepen.io/naruthk/pen/wrRjKv](https://codepen.io/naruth1212/pen/wrRjKv) - via CodePen!
+A live version is hosted on CodePen.
 
 ![Demo](screenshots/overall.png)
 
 ## Development
 
-If you're interested in making changes in development mode to better suit certain aspects of design that you want, then please kindy follow the instructions below carefully.
+If you are a developer interested in adding your own customizations, you will need to follow the steps below.
 
-### Requirements
+### System Requirements
 
-- [Node.js](http://nodejs.org/)
-- Build sytem: [Gulp](http://gulpjs.com/)
+- Node.js
+- Gulp (for file processing and bundling)
 
 ### Build
 
-- Do the `git clone` command of this repository
-- Move into the directory of this recently cloned repository
-- Type and run this command `npm install`
-- Run `gulp copy` to output a **dist** folder that contains all the necessary files to properly display the website on the browser
-- To enter production mode please run `gulp watch`
+1. Clone the repository: git clone https://github.com/naruthk/web-theme-portfolio.git
+2. Install required packages using `npm install`
+3. Run `gulp copy` which will output a `dist` folder that contains the necessary files to properly display the website on any browser
+4. To create a production build, please run `gulp watch`
 
-----
-
-## Folder and Files
+### Project Structure
 
 ```
 ./
@@ -62,9 +57,15 @@ If you're interested in making changes in development mode to better suit certai
 
 ----
 
-## Help & Support
+## Support
 
-Direct any information to `contact@naruthk.com`, especially for help and support. Please support my creation by sharing this theme with everyone else. Thank you!
+Please submit a new issue on this GitHub's repository if you encounter any problem or have any suggestion. 
+
+---
+
+Made with 💌. Thank you!
+
+---
 
 ## License
 
